@@ -6,8 +6,9 @@ use warnings;
 #create string to store sentence
 my $string = 'The quick brown fox jumped over the lazy dog and then the lazy dog cried for about an hour.';
 
+#apply lc command to make it all lower case (case-insensitive)
 #push each character into array
-my @array = ( $string =~ m/./g );
+my @array = ( lc($string) =~ m/./g );
 
 #create hash of arrays to store counts and corresponding characters
 my %count;
